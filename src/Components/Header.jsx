@@ -29,7 +29,7 @@ const Header = () => {
         onChange={(e) => setSearchtext(e.target.value)}
         className="border border-blue-100 shadow-md p-2.5 rounded-md bg-white/90 text-blue-800 placeholder:text-blue-500 w-64"
         type="text"
-        placeholder="Type Something..."/>
+        placeholder="Search here..."/>
         <button
         onClick={HandleClick}
         className="bg-white text-blue-800 px-4 py-2 rounded shadow hover:bg-blue-100 transition">Search</button>
