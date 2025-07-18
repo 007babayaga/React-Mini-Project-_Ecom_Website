@@ -143,6 +143,7 @@ const HomePage = ()=>{
                         )})
                     }
                 </div>
+                <div>Hello</div>
         <Footer/>
         </>
     )
