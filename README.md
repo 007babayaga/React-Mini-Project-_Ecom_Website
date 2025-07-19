@@ -1,12 +1,115 @@
-# React + Vite
+# 🛍️ ReactMini Project — E-commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive, and fully functional E-commerce website built with **React**, **Tailwind CSS**, and powered by the **DummyJSON Product API**.
+Includes complete product browsing features like category filtering, search, product details, and pagination — all with smooth routing and error handling.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**: [react-mini-project-ecom-website.vercel.app](https://react-mini-project-ecom-website.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Preview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/b363ad93-c7d4-457a-87c3-579d27ee3ee6" />
+
+
+---
+
+## 🚀 Features
+
+* 🔍 Search products by name (via API)
+* 📂 Browse by category
+* 📄 Pagination to navigate large product lists
+* 🛒 View full product details
+* 🧱 Fully functional routing with React Router
+* ❌ 404 Not Found page for invalid URLs
+* ⚠️ Graceful error handling on all fetch operations
+* 🎨 Clean, responsive UI with TailwindCSS
+* 🧼 Minimal design using reusable components
+
+---
+
+## 💪 Tech Stack
+
+| Technology    | Role                        |
+| ------------- | --------------------------- |
+| React         | Frontend framework          |
+| JavaScript    | Core logic                  |
+| Tailwind CSS  | Styling & responsive design |
+| HTML/CSS      | Layout and base styles      |
+| React Router  | Routing and navigation      |
+| DummyJSON API | Fake REST API for products  |
+| Vercel        | Deployment                  |
+
+---
+
+## 📁 Folder Structure
+
+```
+src/
+├── assets/
+│   └── image.png          # Product image
+│
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   └── ProductCard.jsx
+│
+├── pages/
+│   ├── HomePage.jsx
+│   ├── ViewPage.jsx           # Single product view
+│   ├── ViewCategoryPage.jsx   # Products by category
+│   ├── ProfilePage.jsx
+│   └── NotFoundPage.jsx
+│
+└── App.jsx
+    main.jsx
+```
+
+---
+
+## 📦 API Used
+
+All product data is fetched from the free [DummyJSON Products API](https://dummyjson.com/).
+Example search endpoint used:
+
+```bash
+https://dummyjson.com/products/search?q=phone
+```
+
+---
+
+## 🧑‍💻 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/reactmini-project.git
+cd reactmini-project
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the app
+
+```bash
+npm run dev
+```
+
+> App will start on `http://localhost:5173` (or your default Vite port)
+
+---
+
+## 🤛🏼 Author
+
+Made with ❤️ by **Rajat**
+Connect with me on [GitHub](https://github.com/your-username)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
