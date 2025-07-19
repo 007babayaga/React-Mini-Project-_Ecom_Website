@@ -106,7 +106,7 @@ npm run dev
 ## 🤛🏼 Author
 
 Made with ❤️ by **Rajat**
-Connect with me on [GitHub](https://github.com/your-username)
+Connect with me on [GitHub](https://github.com/007babayaga)
 
 ---
 
