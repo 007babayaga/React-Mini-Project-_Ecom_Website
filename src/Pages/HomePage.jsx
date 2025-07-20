@@ -4,6 +4,7 @@ import { Footer } from "../Components/Footer"
 import { Header } from "../Components/Header"
 import { useNavigate } from "react-router";
 import { PulseLoader } from "react-spinners";
+import { ShimmerUI } from "../Components/ShimmerUI";
 
 const HomePage = ()=>{
     const limit =24;
@@ -52,12 +53,14 @@ const HomePage = ()=>{
             alert( `Error occured while loading the data${err.message}`);
         }
         finally{
-                setLoading(false);
+                setTimeout(()=>{
+                    setLoading(false);
+                },1000)
             }
         }
     
         const handleSkip = (idx)=>{
-            setPage(idx+1);
+            setPage(idx);
             toUp.current?.scrollIntoView({ behavior: "smooth" });
         }
 
@@ -70,7 +73,7 @@ const HomePage = ()=>{
     useEffect(()=>{
         getAllProducts();
     },[page])
-                                    //do bar api call na ho islye do lag useEffect bnaya hai
+                                        //do bar api call na ho islye do lag useEffect bnaya hai
     useEffect(()=>{
         getCatergories(); 
     },[]);
@@ -99,7 +102,7 @@ const HomePage = ()=>{
         </main>
             } */}
             {
-                loading ? <div><PulseLoader color="blue" cssOverride={override}/></div>
+                loading ? <div><ShimmerUI/></div>
                 : <div className="grid grid-cols-1 md:grid-cols-[300px_1fr] gap-10 p-5"> 
                 <div>
                     <h2 className="text-center font-bold text-2xl mb-6">Categories</h2> 
