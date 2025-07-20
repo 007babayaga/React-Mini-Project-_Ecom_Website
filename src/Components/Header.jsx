@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className=" sticky top-0 right-0 left-0 bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 p-4 flex flex-col md:flex-row items-center justify-between gap-4 text-white ">
 
-    <Link to ="/" className="text-amber-300 font-bold text-3xl">My App</Link>
+    <Link to ="/" className="text-amber-300 font-bold text-3xl">ShopZone</Link>
 
         <div className="flex flex-col sm:flex-row items-center gap-2">
         <input

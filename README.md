@@ -1,4 +1,4 @@
-# 🛍️ ReactMini Project — E-commerce Website
+# 🛍️ ShopZone — E-commerce Website
 
 A clean, responsive, and fully functional E-commerce website built with **React**, **Tailwind CSS**, and powered by the **DummyJSON Product API**.
 Includes complete product browsing features like category filtering, search, product details, and pagination — all with smooth routing and error handling.
