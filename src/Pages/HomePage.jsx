@@ -5,6 +5,7 @@ import { Header } from "../Components/Header"
 import { useNavigate } from "react-router";
 import { PulseLoader } from "react-spinners";
 import { ShimmerUI } from "../Components/ShimmerUI";
+ import { ToastContainer, toast } from 'react-toastify';
 
 const HomePage = ()=>{
     const limit =24;
@@ -62,6 +63,16 @@ const HomePage = ()=>{
         const handleSkip = (idx)=>{
             setPage(idx);
             toUp.current?.scrollIntoView({ behavior: "smooth" });
+            toast.success('Page Changed Successfully', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light"
+                    });
         }
 
     const handleclickfromHome =(id)=>{
@@ -146,6 +157,17 @@ const HomePage = ()=>{
                         )})
                     }
                 </div>
+                <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick={false}
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"/>
         <Footer/>
         </>
     )
