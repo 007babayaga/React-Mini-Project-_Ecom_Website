@@ -8,6 +8,7 @@ import { NotFoudPage } from "./Pages/NotFoundPage";
 import { ProfilePage } from "./Pages/ProfilePage";
 
 const App = () => {
+  // Sare routes App mein lgane hai >> separate of concerns
   return (
     <>
       <BrowserRouter>
