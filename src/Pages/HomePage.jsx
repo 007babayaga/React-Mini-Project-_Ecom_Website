@@ -78,8 +78,8 @@ const HomePage = ()=>{
     const handleclickfromHome =(id)=>{
         navigate(`/${id}/view`)
     }
-    const handleOpenCategory = (txt)=>{
-        navigate(`/category/${txt}`)
+    const handleOpenCategory = (slug)=>{
+        navigate(`/category/${slug}`)
     }
     useEffect(()=>{
         getAllProducts();
